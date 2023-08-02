@@ -1,0 +1,17 @@
+.signin-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+        border-radius: 5px;
+        background: #F8F8F8;
+        width: 335px;
+      
+        padding: 12px;
+        margin: 10px;
+        outline: none;
+        border: none;
+    }
+}

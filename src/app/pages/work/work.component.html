@@ -1,0 +1,308 @@
+<main>
+
+    <section *ngIf="section == 1">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>What you do ?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="language-container">
+
+                <div class="language-box " [class.active-box]="tab1=='Design'" (click)="tabclick1('Design')">
+                    Design
+                </div>
+
+                <div class="language-box" [class.active-box]="tab1=='Development'" (click)="tabclick1('Development')">
+                    Development
+                </div>
+
+                <div class="language-box" [class.active-box]="tab1=='Marketing'" (click)="tabclick1('Marketing')">
+                    Marketing
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="next(2)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section *ngIf="section == 2">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>What you do ?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="language-container">
+
+                <div class="language-box " [class.active-box]="tab2=='UI/UX'" (click)="tabclick2('UI/UX')">
+                    UI/UX
+                </div>
+
+                <div class="language-box" [class.active-box]="tab2=='Branding'" (click)="tabclick2('Branding')">
+                    Branding
+                </div>
+
+                <div class="language-box" [class.active-box]="tab2=='Game'" (click)="tabclick2('Game')">
+                    Game
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="next(3)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section *ngIf="section == 3">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>What tools do you use ?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="mt">
+                <div class="language-container mt">
+
+                    <div class="img-box" [class.active-box]="tool=='figma'" (click)="toolTab('figma')">
+                       <img src="assets/img/figma.png" alt="">
+                    </div>
+    
+                    <div class="img-box" [class.active-box]="tool=='framer'" (click)="toolTab('framer')">
+                        <img src="assets/img/framer.png" alt="">
+                    </div>
+    
+                    <div class="img-box" [class.active-box]="tool=='ai'" (click)="toolTab('ai')">
+                        <img src="assets/img/ai.png" alt="">
+                    </div>
+
+                    
+                </div>
+
+                <div class="language-container mt">
+
+                    <div class="img-box" [class.active-box]="tool=='xd'" (click)="toolTab('xd')">
+                       <img src="assets/img/xd.png" alt="">
+                    </div>
+    
+                    <div class="img-box" [class.active-box]="tool=='ps'" (click)="toolTab('ps')">
+                        <img src="assets/img/ps.png" alt="">
+                    </div>
+    
+                    <div class="img-box" [class.active-box]="tool=='sketch'" (click)="toolTab('sketch')">
+                        <img src="assets/img/sketch.png" alt="">
+                    </div>
+
+        
+                </div>
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="next(4)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section *ngIf="section == 4">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>What you do ?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="mt">
+                <div class="language-container mt">
+
+                    <div class="wire"  (click)="toolTab('figma')">
+                       <h5> Wire framing <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+    
+                    <div class="wire"  (click)="toolTab('figma')">
+                       <h5>Web design <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+    
+                    <div class="wire"  (click)="toolTab('figma')">
+                      <h5>App design <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+
+                    <div class="wire"  (click)="toolTab('figma')">
+                      <h5>UX Research <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+
+                    
+                </div>
+
+                <div class="language-container mt">
+
+                    <div class="wire"  (click)="toolTab('figma')">
+                       <h5> Interaction design <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+    
+                    <div class="wire"  (click)="toolTab('figma')">
+                       <h5>Ux testing <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+    
+                    <div class="wire"  (click)="toolTab('figma')">
+                      <h5>Iconography <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+
+                    <div class="wire"  (click)="toolTab('figma')">
+                      <h5>Illustrations <img src="assets/img/plus.png" alt=""></h5>
+                    </div>
+
+                    
+                </div>
+
+             
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="next(5)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section *ngIf="section == 5">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>Your expertise level ?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="language-container">
+
+                <div class="language-box " [class.active-box]="expertise=='Beginner'" (click)="expertiseTab('Beginner')">
+                    Beginner
+                </div>
+
+                <div class="language-box" [class.active-box]="expertise=='Intermediate'" (click)="expertiseTab('Intermediate')">
+                    Intermediate
+                </div>
+
+                <div class="language-box" [class.active-box]="expertise=='Expert'" (click)="expertiseTab('Expert')">
+                    Expert
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="next(6)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section *ngIf="section == 6">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>In which shift will you work?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="language-container">
+
+                <div class="language-box " [class.active-box]="tab1=='Design'" (click)="tabclick1('Design')">
+                    <div>Day</div>
+                   <h6> 10:00 AM - 7:00 PM</h6>
+                </div>
+
+                <div class="language-box" [class.active-box]="tab1=='Development'" (click)="tabclick1('Development')">
+                   <div> Night</div>
+                    <h6>8:00 PM - 4:00 AM</h6>
+                </div>
+
+                <div class="language-box" [class.active-box]="tab1=='Marketing'" (click)="tabclick1('Marketing')">
+                    <div>Flexi</div>
+                   <h6> 8 Hour</h6>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="next(7)">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section *ngIf="section == 7">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>In which shift will you work?</h4>
+        </div>
+
+        <div class="mt">
+            <div class="language-container">
+
+                <div class="language-box " [class.active-box]="price=='20-40'" (click)="priceClick('20-40')">
+                    <div>20-40</div>
+                   <h6> INR</h6>
+                </div>
+
+                <div class="language-box" [class.active-box]="price=='50-70'" (click)="priceClick('50-70')">
+                   <div> 50-70</div>
+                    <h6>INR</h6>
+                </div>
+
+                <div class="language-box" [class.active-box]="price=='80-100'" (click)="priceClick('80-100')">
+                    <div>80-100</div>
+                   <h6> INR</h6>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="nextpage()">Next</button>
+            </div>
+
+        </div>
+    </section>
+
+
+  
+
+</main>

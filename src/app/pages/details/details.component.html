@@ -1,0 +1,153 @@
+<main>
+
+  <section *ngIf="section == 1">
+    <div class="mt">
+      <h1> Let’s board</h1>
+
+      <h4>Tell us a little bit about yourself</h4>
+    </div>
+
+    <div class="mt">
+      <div class="signin-box">
+
+        <div class="flex">
+          <input type="number" placeholder="+91 76654 72383">
+          <div><img src="assets/img/verify.png" alt=""></div>
+        </div>
+
+        <div class="flex">
+          <input type="email" placeholder="digiqaltechnologies@gmail.com">
+          <div><img src="assets/img/verify.png" alt=""></div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="btnn-div">
+        <button class="btnn" (click)="next(2)">Next</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section *ngIf="section == 2">
+    <div class="mt">
+      <h1> Let’s board</h1>
+
+      <h4>Tell us a little bit about yourself</h4>
+    </div>
+
+    <div class="mt">
+      <div class="signin-box">
+
+        <div class="flex">
+          <input type="text" placeholder="Name as per Adhaar">
+
+        </div>
+
+        <div class="flex">
+          <input type="number" placeholder="xxxx-xxxx-xxxx">
+          <div class="varify-txt"><img src="assets/img/verify.png" alt=""></div>
+        </div>
+
+        <div class="flex">
+          <input type="number" placeholder="OTP">
+          <div class="varify-txt"><img src="assets/img/verify.png" alt=""></div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="btnn-div">
+        <button class="btnn" (click)="next(3)">Next</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section *ngIf="section == 3">
+    <div class="mt">
+      <h1> Let’s board</h1>
+
+      <h4>What is your mother tongue ?</h4>
+    </div>
+
+    <div class="mt">
+      <div class="language-container">
+
+        <div class="language-box " [class.active-box]="tab=='Bank'" (click)="tabclick('Bank')">
+          Bank
+        </div>
+
+        <div class="language-box" [class.active-box]="tab=='UPI'" (click)="tabclick('UPI')">
+          UPI
+        </div>
+
+
+      </div>
+
+
+
+      <div class="btnn-div">
+        <button class="btnn" (click)="next(4)">Next</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section *ngIf="section == 4">
+    <div class="mt">
+      <h1> Let’s board</h1>
+
+      <h4>Tell us a little bit about yourself</h4>
+    </div>
+
+    <div class="mt">
+      <div class="signin-box">
+
+        <div class="flex">
+          <input type="text" placeholder="Bank name">
+
+        </div>
+
+        <div class="flex">
+          <input type="number" placeholder="A/C number">
+
+        </div>
+
+        <div class="flex">
+          <input type="number" placeholder="IFSC">
+         
+        </div>
+
+        <div style="margin-top: 10px;">
+          <label for="fileInput" style="cursor: pointer;">
+            <img width="150" src="assets/img/uploadd.png" alt="">
+          </label>
+          <input type="file" id="fileInput" style="display: none;">
+        </div>
+
+        <div>
+          <h6>Note : Kindly upload you cancelled cheque or latest bank statement</h6>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="btnn-div">
+        <button class="btnn" (click)="nextPage()">Next</button>
+      </div>
+
+    </div>
+  </section>
+
+
+</main>

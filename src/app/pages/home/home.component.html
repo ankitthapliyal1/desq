@@ -1,0 +1,77 @@
+<main>
+
+  <section *ngIf="section == 1">
+    <div class="mt">
+      <h1> Let’s board</h1>
+
+      <h4>What is your mother tongue ?</h4>
+    </div>
+
+    <div class="mt">
+      <div class="language-container">
+
+        <div class="language-box " [class.active-box]="tab=='English'" (click)="tabclick('English')">
+          English
+        </div>
+
+        <div class="language-box" [class.active-box]="tab=='Hindi'" (click)="tabclick('Hindi')">
+          Hindi
+        </div>
+
+        <div class="language-box" [class.active-box]="tab=='Gujrati'" (click)="tabclick('Gujrati')">
+          Gujrati
+        </div>
+
+        <div class="language-box" [class.active-box]="tab=='Marathi'" (click)="tabclick('Marathi')">
+          Marathi
+        </div>
+
+        <div class="language-box" [class.active-box]="tab=='Tamil'" (click)="tabclick('Tamil')">
+          Tamil
+        </div>
+
+      </div>
+
+
+
+      <div class="btnn-div">
+        <button class="btnn" (click)="next(2)" >Next</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section *ngIf="section==2" class="mt">
+    <div class="mt">
+      </div>
+    <div class="mt">
+      <div class="language-container mt">
+
+        <div class="img-box" (click)="submit('Freelancer')"> 
+          <img src="assets/img/freelancer.png" alt="">
+         <h5> Freelancer</h5>
+        </div>
+        <div class="img-box" (click)="submit('Employee')">
+          <img src="assets/img/employee.png" alt="">
+          <h5>Employee</h5>
+        </div>
+        <div class="img-box" (click)="submit('Vendee')">
+          <img src="assets/img/vendee.png" alt="">
+          <h5>Vendee</h5>
+        </div>
+
+        <div class="img-box" (click)="submit('Administration')"> 
+          <img src="assets/img/administration.png" alt="">
+         <h5>Administration</h5></div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+</main>

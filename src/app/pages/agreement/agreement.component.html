@@ -1,0 +1,67 @@
+<main>
+
+    <section  *ngIf="section == 1">
+        <div class="mt">
+            <h1> Let’s board</h1>
+
+            <h4>Desq user agreement</h4>
+        </div>
+
+        <div class="mt">
+            <div class="agreement">
+
+
+               <p>
+               <span class="text-center"> What is Lorem Ipsum?</span> <br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+               </p>
+                
+               <p>
+               <span> Why do we use it?</span> <br>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+               </p>
+            </div>
+
+            <h6>
+                Disclaimer : With all my senses and consciousness, I accept the rules and regulations of the desk
+            </h6>
+
+
+            <div class="btnn-div">
+                <button class="btnn" (click)="submit(2)" >Submit</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section *ngIf="section == 2">
+        <div class="mt">
+            <h1> Congratulation</h1>
+
+           
+        </div>
+
+        <div class="mt">
+            <div class="congo">
+                
+               <p>
+                 Your request has already been received by us, soon our experts will verify your details and if you found eligible then you will soon receive the login credentials on your mail. 
+               </p>
+
+               <h5>
+                Your application no : DESQ-22-01-345.
+               </h5>
+            </div>
+
+           
+
+
+            <div class="btnn-div">
+                <button class="btnn" >Submit</button>
+            </div>
+
+        </div>
+    </section>
+
+</main>

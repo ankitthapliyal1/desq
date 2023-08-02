@@ -1,1 +1,162 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+}
+
+:host {
+    display: block;
+    height: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.mt {
+    margin-top: 3rem;
+}
+
+
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Circe;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Circe;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5 {
+    color: #FFF;
+    text-align: center;
+    font-family: Circe;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h6 {
+    color: #FFF;
+    text-align: center;
+    font-family: Circe;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+span{
+    text-align: center;
+   
+}
+
+p {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: Circe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btnn {
+    cursor:pointer;
+    min-width: 126px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #4B4B4B;
+    background: #000;
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+@media (max-width:'500px') {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+// ******************************************************
+
+.language-container{
+    display: flex;
+    justify-content: center;
+}
+
+  
+.language-box {
+    margin-right: 20px; 
+    color: #FFF;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    border-radius: 20px;
+    background: #080808;
+    width: 149px;
+    height: 149px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+cursor: pointer;
+    
+}
+
+.active-box{
+    border: 1px solid #4B4B4B;
+    border-radius: 20px;
+}
+
+
+.btnn-div{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    .language-container {
+      flex-wrap: wrap;
+    //   margin-right: 10px; /* Adjust the gap for smaller screens */
+    }
+
+    .language-box{
+        margin-top: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
